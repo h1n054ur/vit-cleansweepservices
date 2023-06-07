@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Window Cleaning | Window Washers | Clean Sweep Cleaning Services</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link rel="shortcut icon" href="/images/logos/clean-sweep-logo.jpg" type="image/png">
+	<meta content="initial-scale=1" name="viewport"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<script type="text/javascript">
+(function(n){var t=n.Process||{},i=function(n){var t=+n;return isNaN(t)?n:t},u=function(n){return decodeURIComponent(n.replace(/\+/g,"%20"))},h=/\{(.+?)\}/g,c=window.location.hash&&window.location.hash[1]==="~"&&!/\bSPPC=./i.test(document.cookie||""),s=[],e=null,r=null,o=null,f=null;t.Page=function(n){for(var i=n.length;i--;)c?s.push(n[i]):t.Element(document.getElementById(n[i]))};t.Delayed=function(){var n;for(r=null;n=s.shift();)t.Element(document.getElementById(n))};t.Element=function(n){if(n)switch(n.getAttribute("data-process")){case"if":t.If(n);break;case"replace":t.Replace(n);break;default:t.Fix(n)}};t.Replace=function(n){var i,f=n.parentNode,r=document.createTextNode(t.Get(n.getAttribute("data-replace"))),u=n.firstElementChild;u&&u.getAttribute&&(i=u.getAttribute("href"))&&i.substring(0,4)==="tel:"&&(i=document.createElement("a"),i.setAttribute("href","tel:"+r.data),i.appendChild(document.createTextNode(r.data)),r=i);f.insertBefore(r,n);f.removeChild(n)};t.Fix=function(n){var r,u,i,f=n.attributes.length,e=n.childNodes.length;if(n.nodeName==="SCRIPT"){n.parentNode.removeChild(n);return}while(f--)r=n.attributes[f],r.name.substring(0,13)=="data-replace-"&&(u=r.name.substring(13),n.setAttribute(u,t.Get(r.value)),n.removeAttribute(r.name));while(e--)i=n.childNodes[e],i.nodeType===3&&i.data&&i.data.indexOf("{")>=0&&(i.data=t.Get(i.data))};t.If=function(n){for(var i,u,f,e,o=n.parentNode,s=n.attributes.length,r=undefined;s--;){i=n.attributes[s];switch(i.name){case"field":r=t.Check(n,t.Get(i.value));break;case"nofield":r=!t.Check(n,t.Get(i.value))}if(r!==undefined)break}if(r)for(u=n.childNodes,f=0,e=u.length;f<e;f++)o.insertBefore(u[0],n);o.removeChild(n)};t.Check=function(n,r){for(var u,f,e=n.attributes.length;e--;){u=n.attributes[e];switch(u.name){case"equals":return r==t.Get(u.value);case"gt":case"greaterthan":case"morethan":return i(r)>i(t.Get(u.value));case"gte":return i(r)>=i(t.Get(u.value));case"lt":case"lessthan":case"lesserthan":return i(r)<i(t.Get(u.value));case"lte":return i(r)<=i(t.Get(u.value));case"ne":case"notequals":return r!=t.Get(u.value);case"contains":return f=t.Get(u.value),r.indexOf(f>=0);case"notcontains":return f=t.Get(u.value),!r.indexOf(f>=0);case"in":return f=t.Get(u.value),t.InArray(r,(""+f).split(","));case"notin":return f=t.Get(u.value),!t.InArray(r,(""+f).split(","));case"between":return f=t.Get(u.value).Split(","),f.length==2&&i(r)>=i(f[0])&&i(r)<=i(f[1])?!0:!1}}return!!r};t.InArray=function(n,t){for(var i=t.length;i--;)if(t[i]==n)return!0;return!1};t.Get=function(n){return n.replace(h,function(n,i){var r=i.split("/"),f=r.shift();return t.Data(f.split(":"),0,r[0])||u(r.shift()||"")})};t.Data=function(n,i,r){var u;switch(n[i].toLowerCase()){case"f":return t.Format(n[i+1],n,i+2,r);case"if":return t.Data(n,i+1)?n.pop():"";case"ifno":case"ifnot":return t.Data(n,i+1)?"":n.pop();case"q":case"querystring":return t.Query(n[i+1])||"";case"session":case"cookie":return t.Cookie(n[i+1])||"";case"number":return t.Number(n[i+1],r)||"";case"request":return u=t.Cookie("RWQ")||window.location.search,u&&u[0]==="?"&&n[i+1]&&n[i+1][0]!="?"&&(u=u.substr(1)),u;case"u":return t.UserData(n[i+1])||"";default:return""}};t.Format=function(n,i,r,u){var h,f,s,e,o;if(!n||r>i.length-1)return"";if(h=null,f=null,n=n.toLowerCase(),e=0,n=="binary")e=2;else if(r+1<i.length)switch(n){case"p":case"phone":case"p2":case"phone2":case"p3":case"phone3":i[r].indexOf("0")>=0&&(f=i[r],e=1);break;default:s=parseInt(i[r]);isNaN(s)||(h=s,e=1)}o=t.Data(i,r+e,u);switch(n){case"p":case"phone":return t.Phone(""+o,f);case"p2":case"phone2":return t.Phone(""+o,f||"000.000.0000");case"p3":case"phone3":return t.Phone(""+o,f||"000-000-0000");case"tel":return t.Phone(""+o,f||"0000000000")}};t.Phone=function(n,t){var u,i,f,r;if(!n)return"";if(u=n.replace(/\D+/g,""),u.length<10)return n;for(i=(t||"(000) 000-0000").split(""),f=0,r=0;r<i.length;r++)i[r]=="0"&&(f<u.length?i[r]=u[f++]:(i.splice(r,1),r--));return f==10&&u.length>10&&i.push(" x"+u.substring(10)),i.join("")};t.Query=function(n){var r,f,o,i,s;if(!e)for(e={},r=t.Cookie("RWQ")||window.location.search,f=r?r.substring(1).split("&"):[],o=f.length;o--;)i=f[o].split("="),s=u(i.shift()).toLowerCase(),e[s]=i.length?u(i.join("=")):null;return e[n.toLowerCase()]};t.Cookie=function(n){var f,i,o,e,t;if(!r)for(r={},f=document.cookie?document.cookie.split("; "):[],i=f.length;i--;){o=f[i].split("=");e=u(o.shift()).toLowerCase();t=o.join("=");switch(t[0]){case"#":r[e]=+t.substring(1);break;case":":r[e]=new Date(+t.substring(1));break;case"!":r[e]=t==="!!";break;case"'":r[e]=u(t.substring(1));break;default:r[e]=u(t)}}for(f=n.split("|"),i=0;i<f.length;i++)if(t=r[f[i].toLowerCase()],t)return t;return""};t.UserData=function(n){switch(n){case"DisplayName":return t.Cookie("U_DisplayName")||"";case"TimeOfDay":var r=new Date,i=r.getHours();return i>=17||i<5?"Evening":i<12?"Morning":"Afternoon"}};t.Number=function(n,i){var s,u,r,e;if(!i)return i;if(!o)for(o={},s=(t.Cookie("PHMAP")||"").split(","),e=0;e<s.length;e++)u=(s[e]||"").split("="),u.length===2&&(o[u[0]]=u[1]);return r=o[i],r&&r!=="0"||(r=i),f||(f={}),f[r]=1,r};t.Phones=function(){var n,t;if(f){n=[];for(t in f)f.hasOwnProperty(t)&&n.push(t);return n.join("|")}return null};n.Process=t;document.documentElement&&(document.documentElement.clientWidth<=1280||(t.Cookie("pref")&1)==1)&&(document.documentElement.className+=" minimize")})(this);
+(function(){function o(){var r,n,u;for(v(),f=!0,n=0;n<t.length;n++)r=t[n],s(r[0],r[1]);for(t.length=0,n=0;n<i.length;n++)u=i[n],l(u);i.length=0;window.removeEventListener("DOMContentLoaded",o)}function v(){for(var t,i,f,e,h=document.querySelectorAll("script[src],script[data-require]"),o=0;o<h.length;o++){var c=h[o],s=c.getAttribute("src"),n=c.getAttribute("data-require");if(s||n)for(t=n&&n[0]==="["?u(a(n)):[],s&&t.push(s),i=0;i<t.length;i++)f=t[i],e=/(.+?)\.\d{13}(\.\w{2,12})$/.exec(f),e&&(f=e[1]+e[2]),r[f]=1}}function s(i,u){var h,c,s,o;if(!f){t.push([i,u]);return}for(h=[],c=!1,o=0;o<i.length;o++){if(s=i[o],!s||e[s])continue;else r[s]||(h.push(s),r[s]=1);c=!0}for(typeof u=="function"&&(c?n.push([i,u]):u(window.jQuery)),o=0;o<h.length;o++)y(h[o])}function y(n){if(n.indexOf("http://")===0)throw new Error("Cannot load scripts over unsecure channel: "+n);else n.indexOf("/common/")===0||n.indexOf("/cms/")===0?w(n):p(n)}function p(n){var t=document.createElement("script");t.setAttribute("async","async");t.setAttribute("src",n);n.indexOf("callback=registerGmap")===-1?t.addEventListener("load",function(){h(n)}):window.registerGmap=function(){h(n)};t.addEventListener("error",function(){throw new Error("Unable to load script: '"+n+"'");});document.head.appendChild(t)}function w(n,t){var i=document.createElement("script");if(i.setAttribute("data-require",'["'+n+'"]'),n.indexOf("/common/usc/js/")===0)if(typeof Promise=="undefined")throw new Error("This browser doesn't support ES6 modules.  Cannot load: '"+n+"'");else i.setAttribute("type","module");typeof t=="string"?i.text=t:i.src=n;document.head.appendChild(i)}function b(){var n=document.documentElement.getAttribute("data-gmap");return n?"&key="+n:""}function u(n){var i,r,u,f,t;for(Array.isArray(n)||(n=[n]),i={},r=0;r<n.length;r++)if(n[r])for(u=c[n[r]]||n[r],Array.isArray(u)||(u=[u]),f=0;f<u.length;f++)t=u[f],t.indexOf("://")!==-1||t[0]==="/"?i[t]=1:t.indexOf("admin/")===0?i["/common/"+t+".js"]=1:t.indexOf("usc/")===0?i["/common/"+t+".js"]=1:t.indexOf("cms/")===0?i["/"+t+".js"]=1:i["/common/js/"+t+".js"]=1;return Object.keys(i)}function h(n){for(var t,o=u(n),r=0;r<o.length;r++)t=o[r],e[t]=1,f?l(t):i.push(t)}function l(t){for(var u,h,r,f=[],i=0;i<n.length;i++)r=n[i],r[0].indexOf(t)!==-1&&f.push(r);for(i=0;i<f.length;i++){var r=f[i],o=r[0],s=[];for(u=0;u<o.length;u++)e[o[u]]||s.push(o[u]);if((r[0]=s,!s.length)&&(h=r[1],h))try{h(window.jQuery)}catch(c){console.warn(c.stack)}}for(i=n.length-1;i>=0;i--)r=n[i],r[0].length||n.splice(i,1)}var a=function(n,t){return(window.JSON2||JSON).parse(n,t)},f=!1,t=[],i=[],r={},e={},n=[],c;document.readyState==="complete"||document.readyState==="loaded"||document.readyState==="interactive"?o():window.addEventListener("DOMContentLoaded",o);c={jquery:["j/jquery.3.x","j/jquery.ui"],"j/jquery":"j/jquery.3.x",poly:"usc/p/poly",cookie:"j/jquery.cookie",jwplayer:"/common/js/v/jwplayer.js",map:"m/gmap",googlemap:"https://maps.googleapis.com/maps/api/js?v=3&libraries=places&callback=registerGmap"+b()};window.requireLoading=function(n){var t=u(n);return t&&r[t[0]]};window.require=window.require2=window.rrequire=function(n,t){var i=u(n),f,r;for(typeof t!="function"&&typeof arguments[2]=="function"&&(t=arguments[2]),f=!1,r=0;r<i.length;r++)i[r].indexOf("jquery")!==-1&&(f=!0);f?(console.warn("Requiring jQuery should be avoided for performance reasons."),s(i,t)):s(i,t)};window.register=h})();
+</script>
+	<link rel="stylesheet" type="text/css" href="/cms/includes/lb38n4ey_s1.2210071537278.css"/>
+	<link rel="stylesheet" type="text/css" href="/cms/includes/style.css"/>
+</head>
+<body class="window-cleaning-page residential-branch" data-config="2ji4giic.4x1\jh4t2k1x.7m5">
+	<div id="AccessibilityZone"><nav class="acc-opt v1 dk-bg transparent-bg alt" id="AccessibilityOptionsV1Alt" data-showhide="true" data-action="panel" data-html-class="true" data-class-name="opt-opn">
+	
+	
+	<svg viewBox="0 0 36 36" class="fltr lt" style="width: 50px;height: 50px;" title="Open the accessibility options menu" tabindex="0" data-action="open" data-role="btn" data-type="open"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility"></use></svg>
+	<ul class="acc-mnu pd_tp-70 bdr_r" data-accessibility-menu="true" data-role="panel">
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" title="Close the accessibility options menu" data-role="btn" data-type="close">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_hide"></use></svg> 
+				Close
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="content">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_skip_to_co"></use></svg> 
+				Skip to Content
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="highContrast">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_high_contr"></use></svg>
+				High Contrast
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="largeText">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_text_size"></use></svg> 
+				Increase Text Size
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="clear">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_clear_all"></use></svg> 
+				Clear All
+			</button>
+		</li>
+	</ul>
+</nav></div>
+	<header id="HeaderZone"><div class="hdr v5 lt-bg" id="SmHeaderV5" data-showhide="true" data-header="true" data-class-name="mnu-opn" data-html-class="true">
+	
+		
+		
+	<style>.fly-nv {display: none;}</style>
+	<a name="SiteTop"></a>
+	<div class="hdr-wrppr pd_h-20">
+		<div class="flx f_sb f_m">
+			<button class="mnu-btn dkp mrg_lt mrg_rt" title="Main Menu" aria-label="Main Menu" data-role="btn">
+				<svg viewBox="0 0 36 36" class="blk clr-sec"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#menu"></use></svg>
+			</button>
+			<a class="tp-lg flx f_m pd_tp-30 pd_bt-30" href="/">
+				<img class="dk-lg" alt="Clean Sweep Cleaning Services" title="Clean Sweep Cleaning Services" src="/images/logos/clean-sweep-logo.jpg">
+				<img class="lt-lg" alt="Clean Sweep Cleaning Services" title="Clean Sweep Cleaning Services" src="/images/logos/clean-sweep-logo.jpg">
+			</a>
+			<div class="nv-br flx f_clm f_r">
+				<div class="tp-br flx f_m str f_r hd-1024">
+					
+					<a class="fnt_phn blk" href="tel:0499999909" id="SmHeaderV5_1"><i class="fa-solid fa-phone" style="padding-right: 5px;"></i><span>0499 999 909</span></a>
+				</div>
+				<div class="flx f_r f_m">
+					<a class="fnt_phn mbl mrg_lt mrg_rt" href="tel:0499999909" id="SmHeaderV5_3" data-replace-href="tel:{F:Tel:Cookie:PPCP1/0499999909}"><svg viewBox="0 0 36 36" class="clr-sec"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#phone"></use></svg></a>
+					<nav class="nv pd_v-30 rlt el-tab-box full flx" id="HeaderV5TopNav" data-role="panel" data-closing="true">
+						<ul class="mnu-nv full flx f_sb f_m pd_bt-30 bdr_b">
+							<li>
+								<button class="blk clr-lnk" title="Close the Menu" aria-label="Close the Menu" data-role="btn">
+									<svg viewBox="0 0 24 24" class="blk" title="Close the Menu"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#close"></use></svg>
+								</button>
+							</li>
+						</ul>
+						<ul class="flx full" role="menubar" aria-label="Top Navigation">
+							<li class="selected flx f_m f_wrp ato rlt" role="menuitem">
+								<a class="flx f_clm f_m f_c ato clr-swp str blk ta_c lnk-stl-rev pd_tp-80 pd_bt-80" href="/residential/" target="">
+									<strong>Residential</strong>
+								</a>
+								
+									<span class="el-tab lvl-1 rlt icn fit blk pd_tp-10 pd_bt-10 ta_r pd_h-10 fifth clr-lnk" aria-label="Open child menu of Residential">
+										<svg viewBox="0 0 24 24" class="blk" role="presentation"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#arrow_down"></use></svg>
+									</span>
+									<ul class="fly-nv el-panel sld full ui-scroll bg-bx lk-bg alt bg-bx-no-sdw pd_v-10 pd_h-20 sdw-bx-itm" role="menu">
+										<li class="selected " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/window-cleaning/" target=""><strong>Window Cleaning</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/gutter-cleaning/" target=""><strong>Gutter Cleaning</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/house-washing/" target=""><strong>House Washing</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/pressure-washing/" target=""><strong>Pressure Washing</strong></a>
+											
+										</li>
+									</ul>
+								
+							</li><li class=" flx f_m f_wrp ato rlt" role="menuitem">
+								<a class="flx f_clm f_m f_c ato clr-swp str blk ta_c lnk-stl-rev pd_tp-80 pd_bt-80" href="/commercial/" target="">
+									<strong>Commercial</strong>
+								</a>
+								
+									<span class="el-tab lvl-1 rlt icn fit blk pd_tp-10 pd_bt-10 ta_r pd_h-10 fifth clr-lnk" aria-label="Open child menu of Commercial">
+										<svg viewBox="0 0 24 24" class="blk" role="presentation"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#arrow_down"></use></svg>
+									</span>
+									<ul class="fly-nv el-panel sld full ui-scroll bg-bx lk-bg alt bg-bx-no-sdw pd_v-10 pd_h-20 sdw-bx-itm" role="menu">
+										<li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/commercial/window-cleaning/" target=""><strong>Window Cleaning</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/commercial/exterior-building-washing/" target=""><strong>Exterior Building Washing</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/commercial/pressure-washing/" target=""><strong>Pressure Washing</strong></a>
+											
+										</li>
+									</ul>
+								
+							</li><li class=" flx f_m f_wrp ato rlt" role="menuitem">
+								<a class="flx f_clm f_m f_c ato clr-swp str blk ta_c lnk-stl-rev pd_tp-80 pd_bt-80" href="/why-us/" target="">
+									<strong>Why Us</strong>
+								</a>
+								
+									<span class="el-tab lvl-1 rlt icn fit blk pd_tp-10 pd_bt-10 ta_r pd_h-10 fifth clr-lnk" aria-label="Open child menu of Why Us">
+										<svg viewBox="0 0 24 24" class="blk" role="presentation"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#arrow_down"></use></svg>
+									</span>
+									<ul class="fly-nv el-panel sld full ui-scroll bg-bx lk-bg alt bg-bx-no-sdw pd_v-10 pd_h-20 sdw-bx-itm" role="menu">
+										<li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/why-us/before-and-after/" target=""><strong>Before and After</strong></a>
+											
+										</li>
+									</ul>
+								
+							</li>
+							<li class="flx f_m rlt hd-1024" role="menuitem">
+								<a class="btn v1 sml mrg_lt-90" href="/enquire-now/" rel="noopener"><span>Enquire now</span></a>
+							</li>
+						</ul>		
+						 <ul class="mbl-qk-lnks" id="HeaderV5QuickLinksMobile">
+							
+							<li>
+								<a class="btn v1 sml blk mrg_tp-30" href="/enquire-now/" rel="noopener"><span>Enquire now</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script id="Process_SmHeaderV5" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_SmHeaderV5','SmHeaderV5_1','SmHeaderV5_2','SmHeaderV5_3']);</script>
+</header>
+	<main id="MainZone"><section class="svc sb-bnr v1 lt-bg bg-image" id="SmServiceSubBannerV1" data-onvisible="show-20">
+
+	<div class="bg-bx ulk-bg">
+		<div class="bg-wrp">
+			<picture class="img-bg" role="presentation" data-role="picture">
+				<source media="(max-width: 500px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/sub-banner/Header-Banner-ServiceSub-mobile2.png"/>
+				<source media="(max-width: 800px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/assets/sub-banner/Header-Banner-ServiceSub-tablet2.png"/>
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" data-src="/assets/sub-banner/Header-Banner-ServiceSub2.png">
+			</picture>
+		</div>	
+		<div class="mn_wd pd_v-10 rsp_pd-h">
+			<div class="flx-blk-800-mgd f_sb f_b">
+				<div class="cnt sixty-five mrg_bt-60 rsp_mrg-0" id="SmServiceSubBannerV1Header" data-content="true">
+					
+						<em class="fnt_tc-k">
+							Residential
+						</em>
+					
+					<strong class="fnt_t-1 fnt_tc-1 sentence-case">
+						Window Cleaning
+					</strong>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+		<div class="rsp_pd mbl bg-bx lk-bg hd-1920 sh-500">
+			<div class="mbl loc-bx bg-bx ulk-bg bdr-rds rlt" id="SmServiceSubBannerV1LocationBoxMobile">
+				<svg viewBox="0 0 36 36" class="sml clr-acc"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#sparkle"></use></svg>
+				<svg viewBox="0 0 36 36" class="lrg clr-acc"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#sparkle"></use></svg>
+				<strong class="fnt_t-2 fnt_tc-2">Clean Sweep Cleaning Services <span class="blk"></span></strong>
+				<a href="tel:0499999909" class="blk mrg_tp-10">0499 999 909</a>
+				<div class="btn-bx blk mrg_tp-20">
+					<a href="enquire-now/" class="btn v1 sml blk-sml-500">Enquire now</a>
+				</div>
+				
+			</div>
+		</div>
+
+</section><section class="svc txt-bnr v1 lt-bg" id="ServiceTextBannerV1" data-onvisible="show-20">
+	
+	<div class="bg-bx ulk-bg pd_v-20 pd_bt-0 rsp_pd-h">
+		<div class="mn_wd">
+			<div class="sd-zn third" id="ServiceTextBannerV1SideZone"><aside class="sd-nv v1 lt-bg el-tab-box transparent-bg ui-repeater" id="SideNavV1" universal_="true" aria-label="Navigation menu for Residential" data-closing="true">
+		
+		
+	<div class="sd-nv-bx bg-bx lk-bg bdr-rds">
+		<nav role="menu">
+			<header class="rlt mrg_bt-20">
+				<a class="lnk-stl-rev blk clr-pry" href="/residential/">
+					<strong class="fnt_t-2 fnt_tc-2">Residential</strong>
+				</a>
+			</header>
+			<ul>
+				<li class="lvl-1  ">
+					
+						<a class=" clr-pry selected lnk-stl-rev selected lnk-stl-rev blk ato pd_tp-10 pd_bt-10" href="/residential/window-cleaning/" target="" role="menuitem"><span class="clr-pry blk rlt">Window Cleaning</span></a>
+						
+					
+					
+					
+				</li><li class="lvl-1  ">
+					
+						<a class="lnk-stl clr-pry   blk ato pd_tp-10 pd_bt-10" href="/residential/gutter-cleaning/" target="" role="menuitem"><span class="clr-pry blk rlt">Gutter Cleaning</span></a>
+						
+					
+					
+					
+				</li><li class="lvl-1  ">
+					
+						<a class="lnk-stl clr-pry   blk ato pd_tp-10 pd_bt-10" href="/residential/house-washing/" target="" role="menuitem"><span class="clr-pry blk rlt">House Washing</span></a>
+						
+					
+					
+					
+				</li><li class="lvl-1  ">
+					
+						<a class="lnk-stl clr-pry   blk ato pd_tp-10 pd_bt-10" href="/residential/pressure-washing/" target="" role="menuitem"><span class="clr-pry blk rlt">Pressure Washing</span></a>
+						
+					
+					
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</aside></div>
+			<div class="cnt three-fifths pd_v-30 pd_tp-70 rlt" id="ServiceTextBannerV1Content" data-content="true">
+				<div class="icn-wrp">
+					 <svg viewBox="0 0 36 36" class="star clr-acc"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#service_star"></use></svg>
+					 <svg viewBox="0 0 24 24" class="clr-btn window-cleaning" role="presentation"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#window_cleaning"></use></svg>
+				</div>
+				
+					<strong class="fnt_pl">
+						Transform your windows from shabby to shiny with our exterior window cleaning service.
+					</strong>
+				
+			</div>
+		</div>
+	</div>
+</section><section class="cnt v2 lt-bg pd_v rsp_opn-tp rsp_opn-bt" id="SmContentV2MainContent" data-onvisible="show-20">
+	
+	<div class="mn_wd">
+		<div class="flx-blk-800-mgd f_sb f_t f_rev rsp_pd rsp_opn-tp">
+			<div class="cnt two-thirds" data-content="true">
+				<div class="cnt-stl mrg_bt-20" id="MainContent"><h1> Home window cleaning.</h1><h2>We raise the bar so you don’t have to.</h2><p>Window cleaning may look like an art, but it’s a science. And like most scientific pursuits, the difference between amazing results and unmitigated disasters is a lot of know-how and a little elbow grease.</p><p>Clean Sweep Cleaning Services’s home window cleaning experts are armed with both. Not only are we equipped with top-of-the-line tools and proprietary cleaning products, but we also know how to use those tools and products in a way that will give your home the best results.</p><p>That means sparkling windows that don’t just look good – they’ll be better protected against scratches and cracks and able to add some natural light into your home.</p>
+					
+					<div class="raw-html-embed">
+	<p class="txt-hlt v1">Give us a call today at 
+		<a href="tel:0499 999 909" id="SmContentV2MainContent_1" >0499 999 909</a>
+		to request a free window cleaning estimate!</p>
+</div></div>
+			</div>
+			<div class="anm_hlf-rt rlt third bt-bdr-pttrn-acc">
+				<picture class="img pd-h-125 bdr-tr-rds bdr-tl-rds" role="presentation">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" data-src="/assets/content/content-v2-img-residential.jpeg">
+				</picture>
+				<div class="vid-zn hd-800 mrg_tp-20" id="ContentV2MainContentVideoZone"><div class="mini-clip v1 full vid-bg-tls rlt bg-bx ulk-bg ui-repeater" id="SmMiniClipV1">	
+		
+	
+	
+</div></div>
+			</div>
+		</div>
+	</div>
+</section>
+<script id="Process_SmContentV2MainContent" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_SmContentV2MainContent','SmContentV2MainContent_1','SmContentV2MainContent_2']);</script>
+<section class="srv-team-cnt v1 lt-bg tp-bdr-pttrn-acc" id="SmServiceTeamContentV1" data-onvisible="show-20">
+		
+	
+	<div class="bg-bx ulk-bg">
+		<div class="mn_wd rsp_pd-h">
+			<div class="flx-blk-800-mgd f_b">
+				<div class="cnt two-thirds pd_v rsp_pd-v">
+					<header class="mrg_bt-40" data-content="true">
+						<h3 class="fnt_t-1 fnt_tc-1">
+							Your tough-to-tackle cleaning team.
+						</h3>
+					</header>
+					<ul class="srv-tm-lst anm_seq-lst">
+						<li class="flx full f_m">	
+							<div class="icn-wrp flx f_m f_c fit mrg_rt-90">
+								<svg viewBox="0 0 24 24" class="clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#grad_hat"></use></svg>
+							</div>
+							<p class="fnt_t-2 fnt_tc-2 mrg_lt-90 mrg_tp-0 mrg_bt-0 rsp_mrg-0"><strong>Is highly trained on best practices and techniques</strong> before they touch your windows.</p>
+						</li>
+						<li class="flx full f_m mrg_tp">
+							<div class="icn-wrp flx f_m f_c fit mrg_rt-90">
+								<svg viewBox="0 0 24 24" class="clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#triple_sparkles"></use></svg>
+							</div>
+							<p class="fnt_t-2 fnt_tc-2 mrg_lt-90 mrg_tp-0 mrg_bt-0 rsp_mrg-0"><strong>Has knowledge of safe ways to use equipment</strong> to avoid scratching the glass.</p>
+						</li>
+						
+						<li class="flx full f_m mrg_tp">
+							<div class="icn-wrp flx f_m f_c fit mrg_rt-90 hd-500">
+								<svg viewBox="0 0 24 24" class="clr-pry"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#kilt"></use></svg>
+							</div>
+							<div class="btn-bx mrg_lt-90 rsp_mrg-0">
+								<span id="SmServiceTeamContentV1_1" data-process="if" style="display:none" nofield="{Cookie:L}">
+									<a href="/enquire-now/" class="btn v1 blk-sml-500"><span>Enquire now</span></a>
+								</span>
+								<span id="SmServiceTeamContentV1_2" data-process="if" style="display:none" field="{Cookie:L}">
+									<a href="enquire-now/" class="btn v1 blk-sml-500"><span>Enquire now</span></a>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<script id="Process_SmServiceTeamContentV1" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_SmServiceTeamContentV1','SmServiceTeamContentV1_1','SmServiceTeamContentV1_2']);</script>
+<section class="svc-tlkt v1 lt-bg" id="ServiceToolkitV1" data-onvisible="show-20">
+	
+	<div class="bg-bx lk-bg pd_v rsp_pd">
+		<div class="mn_wd">
+			<header class="ta_c mrg_bt-90">	
+				
+					<strong class="fnt_tc-k m_ato"><span>Our toolkit</span></strong>
+				
+				
+					<h3 class="fnt_t-1 fnt_tc-1">
+						<span class="clr-pry">
+							This ain't no garden hose
+						</span>
+					</h3>
+				
+				
+					<strong class="fnt_t-2 fnt_tc-2">
+						Our toolkit is stocked with the best our industry has to offer.
+					</strong>
+				
+			</header>
+			<ul class="tlkt-lst anm_seq-lst flx-lrg-grd-blk-800-mgd m_ato">
+				<li class="third ta_c">	
+					<picture class="img pd-h-100 bx-sdw-itm hdn mrg_bt-40" role="presentation">
+						<img alt="A Clean Sweep Cleaning Services technician using a high-end water-fed pole to clean second story windows." src="/assets/toolkit/toolkit-img-residential-window-03.jpg">
+					</picture>
+					<h4 class="fnt_t-4 fnt_tc-4 mrg_bt-20">
+						<span class="clr-sec">
+							High-end water fed poles
+						</span>
+					</h4>
+					<p class="cnt-stl pd_h-20">Allow us to reach the highest places and toughest nooks.</p>
+				</li>
+				<li class="third ta_c">	
+					<picture class="img pd-h-100 bx-sdw-itm hdn mrg_bt-40" role="presentation">
+						<img alt="A Clean Sweep Cleaning Services professional technician using a squeegee to clean windows. " src="/assets/toolkit/toolkit-img-residential-window-01.jpeg">
+					</picture>
+					<h4 class="fnt_t-4 fnt_tc-4 mrg_bt-20">
+						<span class="clr-sec">
+							Professional scrubbers and squeegees
+						</span>
+					</h4>
+					<p class="cnt-stl pd_h-20">To make windows shine bright without a spot or streak in sight.</p>
+				</li>
+				<li class="third ta_c">	
+					<picture class="img pd-h-100 bx-sdw-itm hdn mrg_bt-40" role="presentation">
+						<img alt="A window scrubber complete with a purified water cleaning system. " src="/assets/toolkit/toolkit-img-commercial-window-02.jpg">
+					</picture>
+					<h4 class="fnt_t-4 fnt_tc-4 mrg_bt-20">
+						<span class="clr-sec">
+							Water purifying system
+						</span>
+					</h4>
+					<p class="cnt-stl pd_h-20">For a streak-free finish for all your windows.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section><section class="srv-prcss v1 lt-bg pd_v rsp_opn-tp rsp_opn-bt" id="ServiceProcessV1" data-onvisible="show-20">
+	
+	
+	<div class="mn_wd rsp_pd rsp_opn-tp">
+		<div class="flx-blk-800-mgd f_m">
+			<header class="half" data-content="true">	
+				
+					<strong class="fnt_tc-k">Our Process</strong>
+				
+				<h3 class="fnt_t-1 fnt_tc-1">
+					How we clean windows
+				</h3>
+				
+					<strong class="fnt_t-2 fnt_tc-2 four-fifths">
+						Our four-step process means you’ll always get the best results.
+					</strong>
+				
+			</header>
+			<div class="srv-lst half mrg_lt-90">
+				<ul class="flx-sml-grd-blk-800 anm_seq-lst icn-seq-lst">
+					<li class="flx full f_m">	
+						<div class="icn-wrp flx f_m f_c fit mrg_rt-90">
+							<span class="fnt_t-5 fnt_tc-5">1</span>
+						</div>
+						<p class="cnt-stl">We thoroughly inspects your windows and note any damage, leaks, broken glass, or other problems.</p>
+					</li>
+					<li class="flx full f_m">
+						<div class="icn-wrp flx f_m f_c fit mrg_rt-90">
+							<span class="fnt_t-5 fnt_tc-5">2</span>
+						</div>
+						<p class="cnt-stl">We clean your windows using non-abrasive materials, including water-fed poles and de-ionisation systems, for a streak-free shine.</p>
+					</li>
+					<li class="flx full f_m">
+						<div class="icn-wrp flx f_m f_c fit mrg_rt-90">
+							<span class="fnt_t-5 fnt_tc-5">3</span>
+						</div>
+						<p class="cnt-stl">We detail clean the window sill, corners, and edges.</p>
+					</li>
+					<li class="flx full f_m">
+						<div class="icn-wrp flx f_m f_c fit mrg_rt-90">
+							<span class="fnt_t-5 fnt_tc-5">4</span>
+						</div>
+						<p class="cnt-stl">We thoroughly clean-up so we leave your home even better than we found it.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section><section class="sub wd-cta v2 dk-bg rsp_opn-bt" id="SmSubWideCtaV2" data-onvisible="show-20">
+		
+	<div class="bg-bx lk-bg alt bg-bx-no-bdr pd_v-10 rsp_pd">
+		<div class="mn_wd">
+			<div class="flx-blk-800-mgd f_sb f_m">
+				<picture class="thirty-five" role="presentation">
+					<img class="m_ato wd-ato" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" data-src="/images/logos/clean-sweep-logo.jpg" data-parallax="true" data-parallax-item="true" data-timing="ease" data-scroll-fx='[{"effect":"rotate","speed":-0.5,"start":0,"stop":80,"responsive":{"desktop":true,"tablet":true,"mobile":false}}]'>
+				</picture>
+				<div class="inf sixty-five">
+					<p>Our promise is to make things right, right away. <strong>If you are ever dissatisfied with an area of service, simply let us know within 48 hours and we will re-clean at no additional charge.</strong></p>
+					<div class="btn-bx mrg_tp-40">
+						<span id="SmSubWideCtaV2_1" data-process="if" style="display:none" nofield="{Cookie:L}">
+							<a href="/enquire-now/" class="btn v1 blk-sml-500"><span>Enquire now</span></a>
+						</span>
+						<span id="SmSubWideCtaV2_2" data-process="if" style="display:none" field="{Cookie:L}">
+							<a href="enquire-now/" class="btn v1 blk-sml-500"><span>Enquire now</span></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script id="Process_SmSubWideCtaV2" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_SmSubWideCtaV2','SmSubWideCtaV2_1','SmSubWideCtaV2_2']);</script>
+<section class="svc cnt v4 lt-bg pd_v rsp_opn-tp rsp_opn-bt window-cleaning" id="SmServiceContentV4" data-onvisible="show-20">
+		
+	<div class="mn_wd">
+		<div class="flx-blk-800-mgd f_sb f_t rsp_pd rsp_opn-tp">
+			<div class="anm_hlf-rt rlt two-fifths">
+				<picture class="img pd-h-100 bdr-tr-rds bdr-tl-rds bt-bdr-pttrn-acc" role="presentation">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" data-src="/assets/content/content-v2-img-residential-windowcleaning-02B.jpeg">
+				</picture>
+			</div>
+			<div class="cnt three-fifths mrg_tp-10" data-content="true">
+				<header class="mrg_bt-20" id="SmServiceContentV4Header">
+					<h3 class="fnt_t-1 fnt_tc-1">
+						Why invest in professional window cleaning?
+					</h3>
+				</header>
+				<div class="cnt-stl" id="SmServiceContentV4Content"><p>Part art, part science - getting a streak-free shine on your home’s windows takes know-how, the right products and tools, and maybe even a ladder. One wrong step and you could damage the glass or fall on your… backside. Trusting this important job to a novice cleaner might not be a smart move, either. All it takes is one ladder slip or misuse of tools, and you’ve got a liability on your hands. The choice, then, is clear (just like your windows will be) - you need Clean Sweep Cleaning Services.</p><p>Cleaning your windows and screens can extend the life of your windows, and increase your home’s energy efficiency. Ditch the DIY, sit the rookies on the bench, and discover why a TEG clean means getting high-quality, long-lasting results.&nbsp;</p><div class="raw-html-embed">
+	<p class="txt-hlt v2">Clean Sweep Cleaning Services is ready to get to work. Reach out to us at 
+		<a href="tel:0499 999 909" id="SmServiceContentV4_1">0499 999 909</a>
+		today! </p>
+</div></div>
+			</div>
+		</div>
+	</div>
+</section>
+<script id="Process_SmServiceContentV4" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_SmServiceContentV4','SmServiceContentV4_1','SmServiceContentV4_2']);</script>
+<section class="srv-bnfts v1 lt-bg vsbl rlt" id="ServiceBenefitsV1" data-onvisible="show-20">
+	
+	
+	<div class="bg-bx ulk-bg pd_v pd_bt-0">
+		<div class="mn_wd rsp_pd-h">
+			<header class="ta_c mrg_bt-90 rsp_mrg-0" data-content="true">	
+				
+					<strong class="fnt_tc-k m_ato"><span>A Clear Choice</span></strong>
+				
+				<h3 class="fnt_t-1 fnt_tc-1">
+					The benefits of a squeaky clean window
+				</h3>
+			</header>
+			<div class="vls-lst bdr-rds bg-bx lk-bg pd_v-20 pd_h-30 rsp_pd-h mrg_tp">
+				<ul class="flx-lrg-grd-blk-800 anm_seq-lst icn-seq-lst">
+					<li class="third ta_c">
+						<div class="icn-wrp mrg_bt">
+							<svg viewBox="0 0 24 24" class="blk clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#service_checkmark"></use></svg>
+						</div>
+						<div class="cnt-stl">
+							<p>Long-term protection against cracking, etching, and scratches.</p>
+						</div>
+					</li>
+					<li class="third ta_c">
+						<div class="icn-wrp mrg_bt">
+							<svg viewBox="0 0 24 24" class="blk clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#service_checkmark"></use></svg>
+						</div>
+						<div class="cnt-stl">
+							<p>Lets more natural light into your home.</p>
+						</div>
+					</li>
+					<li class="third ta_c">
+						<div class="icn-wrp mrg_bt">
+							<svg viewBox="0 0 24 24" class="blk clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#service_checkmark"></use></svg>
+						</div>
+						<div class="cnt-stl">
+							<p>Better-looking windows and increased curb appeal.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section><section class="pnl-grp v1 lt-bg" id="PanelGroupV1">
+	
+	<div class="bx" id="PanelGroupV1Zone"><section class="vls v9 lt-bg pd_v rsp_opn-tp rsp_opn-bt vsbl rlt" id="SmValuesV9" data-onvisible="show-20">
+	
+	
+	<div class="rsp_pd-v rsp_opn-tp">
+		<div class="bdg-mbl mrg_bt-10 ta_c">
+			<picture class="inln-blk fit p-h-100 m_ato" role="presentation">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Illustration of a proud man in kilt" data-src="/images/logos/clean-sweep-logo.jpg" data-parallax="true" data-parallax-item="true" data-timing="ease" data-scroll-fx='[{"effect":"scale","speed":3,"start":0,"stop":100,"responsive":{"desktop":true,"tablet":true,"mobile":true}}]'>
+			</picture>
+		</div>
+		<div class="rlt">
+			<div class="anm_hlf-dn tp-bdr-pttrn-blk-acc"></div>
+			<div class="mn_wd rsp_pd-h">
+				<div class="flx-blk-1024">
+					<picture class="anm_hlf-up bdg fit p-h-100 bg-bx lk-bg alt no-sdw mrg_rt-60 hd-1024" role="presentation">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Illustration of a proud man in kilt" data-src="/images/logos/clean-sweep-logo.jpg" data-parallax="true" data-parallax-item="true" data-timing="ease" data-scroll-fx='[{"effect":"scale","speed":1.75,"start":0,"stop":100,"responsive":{"desktop":true,"tablet":true,"mobile":true}}]'>
+					</picture>
+					<div class="cnt-wrp full">
+						<div class="ttl-br mrg_bt-30 ta_c-1024">
+							<strong class="fnt_itm-k">Get Started</strong>
+						</div>
+						<header class="mrg_bt ta_c-1024" data-content="true">
+							<h3 class="fnt_t-1 mrg_bt-20">
+								<span class="clr-pry">How it works when you work with us:</span>
+							</h3>
+						</header>
+						<div class="vls-lst mn_">
+							<ul class="anm_seq-lst icn-seq-lst ui-repeater" id="ValuesV9List">
+								<li class="full flx f_t " data-item="i" data-key="">
+										
+										<div class="icn-wrp ta_c mrg_rt-90">
+											<svg viewBox="0 0 24 24" class="blk clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#cell_ring"></use></svg>
+										</div>
+									
+									<div class="ato cnt-stl">
+										<h4 class="fnt_t-3 fnt_tc-3"><span class="clr-sec">Schedule your free estimate.</span></h4>
+										<p>We’ll visit your home or give you a call to assess the situation and come up with the best solution for your situation.</p>
+									</div>
+								</li><li class="full flx f_t mrg_tp-40" data-item="i" data-key="">
+										
+										<div class="icn-wrp ta_c mrg_rt-90">
+											<svg viewBox="0 0 24 24" class="blk clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#checkmark"></use></svg>
+										</div>
+									
+									<div class="ato cnt-stl">
+										<h4 class="fnt_t-3 fnt_tc-3"><span class="clr-sec">Book your service.</span></h4>
+										<p>We&rsquo;ll show up on time and be ready to work. Plus, we&rsquo;ll send you updates from pre-appointment to completion so you&rsquo;re always in the loop.</p>
+									</div>
+								</li><li class="full flx f_t mrg_tp-40" data-item="i" data-key="">
+										
+										<div class="icn-wrp ta_c mrg_rt-90">
+											<svg viewBox="0 0 24 24" class="blk clr-btn"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#thumb_up"></use></svg>
+										</div>
+									
+									<div class="ato cnt-stl">
+										<h4 class="fnt_t-3 fnt_tc-3"><span class="clr-sec">Check our work.</span></h4>
+										<p>Your satisfaction is our priority. That&rsquo;s why we conduct a post-service walk-through so you can make sure everything has been handled to the highest standard.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="mrg_tp-40">
+								
+									<a href="/enquire-now/" class="btn v1 blk-sml-500"><span>Enquire now</span></a>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section></div>
+</section></main>
+	<footer id="FooterZone"><section class="ftr v3 dk-bg pd_v-20" id="SmFooterV3">
+	
+	
+	<div class="flx-blk-1024-mgd-b f_sb pd_h-30 rsp_pd">
+		<div class="ftr-logo fifth bdr_r flx f_clm f_t">
+			<div class="ta_c">
+				<a class="clr-swp mrg_bt-20 blk ndr-ln-rev" href="/enquire-now/" target=""><strong>Contact Us</strong></a>
+
+				<div class="ta_c-1024">
+					<div class="inln-blk"><a class="phn blk ndr-ln-rev flx f_m mrg_bt-30" href="tel:0499999909" id="SmFooterV3_1" data-replace-href="tel:0499999909"><svg viewBox="0 0 36 36" class="blk no-ato"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#phone"></use></svg> <strong class="mrg_lt-20"><span id="SmFooterV3_2" >0499 999 909</span></strong></a></div>
+				</div>
+
+				<div class="ftr-so fit ui-repeater" id="FooterV3Social">
+					<ul class="flx f_c">
+						<li class="mrg_lt" data-item="i" data-key="911">
+							<a class="so-lk blk scl-img-itm" href="https://www.instagram.com/theexteriorgroup/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+								<svg viewBox="0 0 36 36" class="blk itm"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#instagram"></use></svg>
+							</a>
+						</li>
+						<li class="mrg_lt" data-item="i" data-key="909">
+							<a class="so-lk blk scl-img-itm" href="https://www.facebook.com/profile.php?id=100086650427881" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+								<svg viewBox="0 0 36 36" class="blk itm"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#facebook"></use></svg>
+							</a>
+						</li>
+					</ul>                                    
+				</div>
+			</div>
+		</div>
+		<div class="ftr-nv fit half ta_c-1024 mrg_lt-90" id="FooterV3Nav">
+			<div class="cta ta_c">
+				<em>Our services are available to all members of the public regardless of race, gender or sexual orientation.</em>
+			</div>
+			<nav class="mrg_tp-40">
+				<ul class="flx-sml-grd" style="justify-content: center;">
+					
+					<li class="fit rlt"><a class="lnk-stl" href="/accessibility/">Accessibility</a></li>
+					<li class="fit rlt"><a class="lnk-stl" href="/privacy-policy/">Privacy Policy</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+		<div class="ftr-cta fifth bdr_l ta_r ta_c-1024">
+			<a class="btn v1 sml blk-500" href="/enquire-now/"><span>Enquire now</span></a>
+			
+			<div class="mrg_tp-80 blk">&copy; 2022 All Rights Reserved.</div>
+		</div>
+	</div>
+</section>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/cms/includes/u92324ye8cc.2209271134003.js" defer data-require='["a/bootstrap2","svg","p/scroll","sa.test","p/utils","p/slide-toggle","p/show-hide","p/accessibility-menu","p/site-header","p/tabbable"]'></script>
+<noscript id="deferred-styles">
+	<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600;700&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"/>
+</noscript>
+<script>
+var loadDeferredStyles = function() {
+	var addStylesNode = document.getElementById('deferred-styles');
+	var replacement = document.createElement('div');
+	replacement.innerHTML = addStylesNode.textContent;
+	document.body.appendChild(replacement)
+	addStylesNode.parentElement.removeChild(addStylesNode);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+else window.addEventListener('load', loadDeferredStyles);
+</script>
+</body>
+</html>

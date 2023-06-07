@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+<style>
+	g path { stroke: none; }
+</style>
+<g class="root" id="sparkle" data-name="sparkle" fill="#ffffff" stroke="#ffffff">
+	<path d="M18.483 0.288C18.262 8.255 8.095 17.875 0 17.776c8.095 0.099 17.738 9.969 17.528 17.936 0.21-7.967 10.389-17.58 18.472-17.482C27.917 18.131 18.262 8.255 18.483 0.288" />
+</g>
+</svg>

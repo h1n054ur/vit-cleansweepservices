@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Privacy Policy | Gutter Cleaning</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link rel="shortcut icon" href="/images/logos/clean-sweep-logo.jpg" type="image/png">
+	<meta content="initial-scale=1" name="viewport"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<script type="text/javascript">
+(function(n){var t=n.Process||{},i=function(n){var t=+n;return isNaN(t)?n:t},u=function(n){return decodeURIComponent(n.replace(/\+/g,"%20"))},h=/\{(.+?)\}/g,c=window.location.hash&&window.location.hash[1]==="~"&&!/\bSPPC=./i.test(document.cookie||""),s=[],e=null,r=null,o=null,f=null;t.Page=function(n){for(var i=n.length;i--;)c?s.push(n[i]):t.Element(document.getElementById(n[i]))};t.Delayed=function(){var n;for(r=null;n=s.shift();)t.Element(document.getElementById(n))};t.Element=function(n){if(n)switch(n.getAttribute("data-process")){case"if":t.If(n);break;case"replace":t.Replace(n);break;default:t.Fix(n)}};t.Replace=function(n){var i,f=n.parentNode,r=document.createTextNode(t.Get(n.getAttribute("data-replace"))),u=n.firstElementChild;u&&u.getAttribute&&(i=u.getAttribute("href"))&&i.substring(0,4)==="tel:"&&(i=document.createElement("a"),i.setAttribute("href","tel:"+r.data),i.appendChild(document.createTextNode(r.data)),r=i);f.insertBefore(r,n);f.removeChild(n)};t.Fix=function(n){var r,u,i,f=n.attributes.length,e=n.childNodes.length;if(n.nodeName==="SCRIPT"){n.parentNode.removeChild(n);return}while(f--)r=n.attributes[f],r.name.substring(0,13)=="data-replace-"&&(u=r.name.substring(13),n.setAttribute(u,t.Get(r.value)),n.removeAttribute(r.name));while(e--)i=n.childNodes[e],i.nodeType===3&&i.data&&i.data.indexOf("{")>=0&&(i.data=t.Get(i.data))};t.If=function(n){for(var i,u,f,e,o=n.parentNode,s=n.attributes.length,r=undefined;s--;){i=n.attributes[s];switch(i.name){case"field":r=t.Check(n,t.Get(i.value));break;case"nofield":r=!t.Check(n,t.Get(i.value))}if(r!==undefined)break}if(r)for(u=n.childNodes,f=0,e=u.length;f<e;f++)o.insertBefore(u[0],n);o.removeChild(n)};t.Check=function(n,r){for(var u,f,e=n.attributes.length;e--;){u=n.attributes[e];switch(u.name){case"equals":return r==t.Get(u.value);case"gt":case"greaterthan":case"morethan":return i(r)>i(t.Get(u.value));case"gte":return i(r)>=i(t.Get(u.value));case"lt":case"lessthan":case"lesserthan":return i(r)<i(t.Get(u.value));case"lte":return i(r)<=i(t.Get(u.value));case"ne":case"notequals":return r!=t.Get(u.value);case"contains":return f=t.Get(u.value),r.indexOf(f>=0);case"notcontains":return f=t.Get(u.value),!r.indexOf(f>=0);case"in":return f=t.Get(u.value),t.InArray(r,(""+f).split(","));case"notin":return f=t.Get(u.value),!t.InArray(r,(""+f).split(","));case"between":return f=t.Get(u.value).Split(","),f.length==2&&i(r)>=i(f[0])&&i(r)<=i(f[1])?!0:!1}}return!!r};t.InArray=function(n,t){for(var i=t.length;i--;)if(t[i]==n)return!0;return!1};t.Get=function(n){return n.replace(h,function(n,i){var r=i.split("/"),f=r.shift();return t.Data(f.split(":"),0,r[0])||u(r.shift()||"")})};t.Data=function(n,i,r){var u;switch(n[i].toLowerCase()){case"f":return t.Format(n[i+1],n,i+2,r);case"if":return t.Data(n,i+1)?n.pop():"";case"ifno":case"ifnot":return t.Data(n,i+1)?"":n.pop();case"q":case"querystring":return t.Query(n[i+1])||"";case"session":case"cookie":return t.Cookie(n[i+1])||"";case"number":return t.Number(n[i+1],r)||"";case"request":return u=t.Cookie("RWQ")||window.location.search,u&&u[0]==="?"&&n[i+1]&&n[i+1][0]!="?"&&(u=u.substr(1)),u;case"u":return t.UserData(n[i+1])||"";default:return""}};t.Format=function(n,i,r,u){var h,f,s,e,o;if(!n||r>i.length-1)return"";if(h=null,f=null,n=n.toLowerCase(),e=0,n=="binary")e=2;else if(r+1<i.length)switch(n){case"p":case"phone":case"p2":case"phone2":case"p3":case"phone3":i[r].indexOf("0")>=0&&(f=i[r],e=1);break;default:s=parseInt(i[r]);isNaN(s)||(h=s,e=1)}o=t.Data(i,r+e,u);switch(n){case"p":case"phone":return t.Phone(""+o,f);case"p2":case"phone2":return t.Phone(""+o,f||"000.000.0000");case"p3":case"phone3":return t.Phone(""+o,f||"000-000-0000");case"tel":return t.Phone(""+o,f||"0000000000")}};t.Phone=function(n,t){var u,i,f,r;if(!n)return"";if(u=n.replace(/\D+/g,""),u.length<10)return n;for(i=(t||"(000) 000-0000").split(""),f=0,r=0;r<i.length;r++)i[r]=="0"&&(f<u.length?i[r]=u[f++]:(i.splice(r,1),r--));return f==10&&u.length>10&&i.push(" x"+u.substring(10)),i.join("")};t.Query=function(n){var r,f,o,i,s;if(!e)for(e={},r=t.Cookie("RWQ")||window.location.search,f=r?r.substring(1).split("&"):[],o=f.length;o--;)i=f[o].split("="),s=u(i.shift()).toLowerCase(),e[s]=i.length?u(i.join("=")):null;return e[n.toLowerCase()]};t.Cookie=function(n){var f,i,o,e,t;if(!r)for(r={},f=document.cookie?document.cookie.split("; "):[],i=f.length;i--;){o=f[i].split("=");e=u(o.shift()).toLowerCase();t=o.join("=");switch(t[0]){case"#":r[e]=+t.substring(1);break;case":":r[e]=new Date(+t.substring(1));break;case"!":r[e]=t==="!!";break;case"'":r[e]=u(t.substring(1));break;default:r[e]=u(t)}}for(f=n.split("|"),i=0;i<f.length;i++)if(t=r[f[i].toLowerCase()],t)return t;return""};t.UserData=function(n){switch(n){case"DisplayName":return t.Cookie("U_DisplayName")||"";case"TimeOfDay":var r=new Date,i=r.getHours();return i>=17||i<5?"Evening":i<12?"Morning":"Afternoon"}};t.Number=function(n,i){var s,u,r,e;if(!i)return i;if(!o)for(o={},s=(t.Cookie("PHMAP")||"").split(","),e=0;e<s.length;e++)u=(s[e]||"").split("="),u.length===2&&(o[u[0]]=u[1]);return r=o[i],r&&r!=="0"||(r=i),f||(f={}),f[r]=1,r};t.Phones=function(){var n,t;if(f){n=[];for(t in f)f.hasOwnProperty(t)&&n.push(t);return n.join("|")}return null};n.Process=t;document.documentElement&&(document.documentElement.clientWidth<=1280||(t.Cookie("pref")&1)==1)&&(document.documentElement.className+=" minimize")})(this);
+(function(){function o(){var r,n,u;for(v(),f=!0,n=0;n<t.length;n++)r=t[n],s(r[0],r[1]);for(t.length=0,n=0;n<i.length;n++)u=i[n],l(u);i.length=0;window.removeEventListener("DOMContentLoaded",o)}function v(){for(var t,i,f,e,h=document.querySelectorAll("script[src],script[data-require]"),o=0;o<h.length;o++){var c=h[o],s=c.getAttribute("src"),n=c.getAttribute("data-require");if(s||n)for(t=n&&n[0]==="["?u(a(n)):[],s&&t.push(s),i=0;i<t.length;i++)f=t[i],e=/(.+?)\.\d{13}(\.\w{2,12})$/.exec(f),e&&(f=e[1]+e[2]),r[f]=1}}function s(i,u){var h,c,s,o;if(!f){t.push([i,u]);return}for(h=[],c=!1,o=0;o<i.length;o++){if(s=i[o],!s||e[s])continue;else r[s]||(h.push(s),r[s]=1);c=!0}for(typeof u=="function"&&(c?n.push([i,u]):u(window.jQuery)),o=0;o<h.length;o++)y(h[o])}function y(n){if(n.indexOf("http://")===0)throw new Error("Cannot load scripts over unsecure channel: "+n);else n.indexOf("/common/")===0||n.indexOf("/cms/")===0?w(n):p(n)}function p(n){var t=document.createElement("script");t.setAttribute("async","async");t.setAttribute("src",n);n.indexOf("callback=registerGmap")===-1?t.addEventListener("load",function(){h(n)}):window.registerGmap=function(){h(n)};t.addEventListener("error",function(){throw new Error("Unable to load script: '"+n+"'");});document.head.appendChild(t)}function w(n,t){var i=document.createElement("script");if(i.setAttribute("data-require",'["'+n+'"]'),n.indexOf("/common/usc/js/")===0)if(typeof Promise=="undefined")throw new Error("This browser doesn't support ES6 modules.  Cannot load: '"+n+"'");else i.setAttribute("type","module");typeof t=="string"?i.text=t:i.src=n;document.head.appendChild(i)}function b(){var n=document.documentElement.getAttribute("data-gmap");return n?"&key="+n:""}function u(n){var i,r,u,f,t;for(Array.isArray(n)||(n=[n]),i={},r=0;r<n.length;r++)if(n[r])for(u=c[n[r]]||n[r],Array.isArray(u)||(u=[u]),f=0;f<u.length;f++)t=u[f],t.indexOf("://")!==-1||t[0]==="/"?i[t]=1:t.indexOf("admin/")===0?i["/common/"+t+".js"]=1:t.indexOf("usc/")===0?i["/common/"+t+".js"]=1:t.indexOf("cms/")===0?i["/"+t+".js"]=1:i["/common/js/"+t+".js"]=1;return Object.keys(i)}function h(n){for(var t,o=u(n),r=0;r<o.length;r++)t=o[r],e[t]=1,f?l(t):i.push(t)}function l(t){for(var u,h,r,f=[],i=0;i<n.length;i++)r=n[i],r[0].indexOf(t)!==-1&&f.push(r);for(i=0;i<f.length;i++){var r=f[i],o=r[0],s=[];for(u=0;u<o.length;u++)e[o[u]]||s.push(o[u]);if((r[0]=s,!s.length)&&(h=r[1],h))try{h(window.jQuery)}catch(c){console.warn(c.stack)}}for(i=n.length-1;i>=0;i--)r=n[i],r[0].length||n.splice(i,1)}var a=function(n,t){return(window.JSON2||JSON).parse(n,t)},f=!1,t=[],i=[],r={},e={},n=[],c;document.readyState==="complete"||document.readyState==="loaded"||document.readyState==="interactive"?o():window.addEventListener("DOMContentLoaded",o);c={jquery:["j/jquery.3.x","j/jquery.ui"],"j/jquery":"j/jquery.3.x",poly:"usc/p/poly",cookie:"j/jquery.cookie",jwplayer:"/common/js/v/jwplayer.js",map:"m/gmap",googlemap:"https://maps.googleapis.com/maps/api/js?v=3&libraries=places&callback=registerGmap"+b()};window.requireLoading=function(n){var t=u(n);return t&&r[t[0]]};window.require=window.require2=window.rrequire=function(n,t){var i=u(n),f,r;for(typeof t!="function"&&typeof arguments[2]=="function"&&(t=arguments[2]),f=!1,r=0;r<i.length;r++)i[r].indexOf("jquery")!==-1&&(f=!0);f?(console.warn("Requiring jQuery should be avoided for performance reasons."),s(i,t)):s(i,t)};window.register=h})();
+</script>
+	<link rel="stylesheet" type="text/css" href="/cms/includebs/uiyznoh7fxx.2209231510006.css"/>
+	<link rel="stylesheet" type="text/css" href="/cms/includes/style.css"/>
+</head>
+<body class="privacy-policy-page privacy-policy-branch" data-config="44nrqppt.38o">
+	<div id="AccessibilityZone"><nav class="acc-opt v1 dk-bg transparent-bg alt" id="AccessibilityOptionsV1Alt" data-showhide="true" data-action="panel" data-html-class="true" data-class-name="opt-opn">
+	
+	
+	<svg viewBox="0 0 36 36" class="fltr lt" style="width: 50px;height: 50px;" title="Open the accessibility options menu" tabindex="0" data-action="open" data-role="btn" data-type="open"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility"></use></svg>
+	<ul class="acc-mnu pd_tp-70 bdr_r" data-accessibility-menu="true" data-role="panel">
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" title="Close the accessibility options menu" data-role="btn" data-type="close">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_hide"></use></svg> 
+				Close
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="content">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_skip_to_co"></use></svg> 
+				Skip to Content
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="highContrast">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_high_contr"></use></svg>
+				High Contrast
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="largeText">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_text_size"></use></svg> 
+				Increase Text Size
+			</button>
+		</li>
+		<li>
+			<button class="full flx f_m btn-clr-hvr bdr_b pd_tp pd_bt pd_h-30 rsp_pd-h" data-action="clear">
+				<svg viewBox="0 0 36 36" class="acc-i mrg_rt"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#accessibility_clear_all"></use></svg> 
+				Clear All
+			</button>
+		</li>
+	</ul>
+</nav></div>
+	<header id="HeaderZone"><div class="hdr v5 lt-bg" id="SmHeaderV5" data-showhide="true" data-header="true" data-class-name="mnu-opn" data-html-class="true">
+	
+		
+		
+	<style>.fly-nv {display: none;}</style>
+	<a name="SiteTop"></a>
+	<div class="hdr-wrppr pd_h-20">
+		<div class="flx f_sb f_m">
+			<button class="mnu-btn dkp mrg_lt mrg_rt" title="Main Menu" aria-label="Main Menu" data-role="btn">
+				<svg viewBox="0 0 36 36" class="blk clr-sec"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#menu"></use></svg>
+			</button>
+			<a class="tp-lg flx f_m pd_tp-30 pd_bt-30" href="/">
+				<img class="dk-lg" alt="Clean Sweep Cleaning Services" title="Clean Sweep Cleaning Services" src="/images/logos/clean-sweep-logo.jpg">
+				<img class="lt-lg" alt="Clean Sweep Cleaning Services" title="Clean Sweep Cleaning Services" src="/images/logos/clean-sweep-logo.jpg">
+			</a>
+			<div class="nv-br flx f_clm f_r">
+				<div class="tp-br flx f_m str f_r hd-1024">
+					
+					<a class="fnt_phn blk" href="tel:0499999909" id="SmHeaderV5_1"><i class="fa-solid fa-phone" style="padding-right: 5px;"></i><span>0499 999 909</span></a>
+				</div>
+				<div class="flx f_r f_m">
+					<a class="fnt_phn mbl mrg_lt mrg_rt" href="tel:0499999909" id="SmHeaderV5_3" data-replace-href="tel:{F:Tel:Cookie:PPCP1/0499999909}"><svg viewBox="0 0 36 36" class="clr-sec"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#phone"></use></svg></a>
+					<nav class="nv pd_v-30 rlt el-tab-box full flx" id="HeaderV5TopNav" data-role="panel" data-closing="true">
+						<ul class="mnu-nv full flx f_sb f_m pd_bt-30 bdr_b">
+							<li>
+								<button class="blk clr-lnk" title="Close the Menu" aria-label="Close the Menu" data-role="btn">
+									<svg viewBox="0 0 24 24" class="blk" title="Close the Menu"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#close"></use></svg>
+								</button>
+							</li>
+						</ul>
+						<ul class="flx full" role="menubar" aria-label="Top Navigation">
+							<li class=" flx f_m f_wrp ato rlt" role="menuitem">
+								<a class="flx f_clm f_m f_c ato clr-swp str blk ta_c lnk-stl-rev pd_tp-80 pd_bt-80" href="/residential/" target="">
+									<strong>Residential</strong>
+								</a>
+								
+									<span class="el-tab lvl-1 rlt icn fit blk pd_tp-10 pd_bt-10 ta_r pd_h-10 fifth clr-lnk" aria-label="Open child menu of Residential">
+										<svg viewBox="0 0 24 24" class="blk" role="presentation"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#arrow_down"></use></svg>
+									</span>
+									<ul class="fly-nv el-panel sld full ui-scroll bg-bx lk-bg alt bg-bx-no-sdw pd_v-10 pd_h-20 sdw-bx-itm" role="menu">
+										<li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/window-cleaning/" target=""><strong>Window Cleaning</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/gutter-cleaning/" target=""><strong>Gutter Cleaning</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/house-washing/" target=""><strong>House Washing</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/residential/pressure-washing/" target=""><strong>Pressure Washing</strong></a>
+											
+										</li>
+									</ul>
+								
+							</li><li class=" flx f_m f_wrp ato rlt" role="menuitem">
+								<a class="flx f_clm f_m f_c ato clr-swp str blk ta_c lnk-stl-rev pd_tp-80 pd_bt-80" href="/commercial/" target="">
+									<strong>Commercial</strong>
+								</a>
+								
+									<span class="el-tab lvl-1 rlt icn fit blk pd_tp-10 pd_bt-10 ta_r pd_h-10 fifth clr-lnk" aria-label="Open child menu of Commercial">
+										<svg viewBox="0 0 24 24" class="blk" role="presentation"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#arrow_down"></use></svg>
+									</span>
+									<ul class="fly-nv el-panel sld full ui-scroll bg-bx lk-bg alt bg-bx-no-sdw pd_v-10 pd_h-20 sdw-bx-itm" role="menu">
+										<li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/commercial/window-cleaning/" target=""><strong>Window Cleaning</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/commercial/exterior-building-washing/" target=""><strong>Exterior Building Washing</strong></a>
+											
+										</li><li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/commercial/pressure-washing/" target=""><strong>Pressure Washing</strong></a>
+											
+										</li>
+									</ul>
+								
+							</li><li class=" flx f_m f_wrp ato rlt" role="menuitem">
+								<a class="flx f_clm f_m f_c ato clr-swp str blk ta_c lnk-stl-rev pd_tp-80 pd_bt-80" href="/why-us/" target="">
+									<strong>Why Us</strong>
+								</a>
+								
+									<span class="el-tab lvl-1 rlt icn fit blk pd_tp-10 pd_bt-10 ta_r pd_h-10 fifth clr-lnk" aria-label="Open child menu of Why Us">
+										<svg viewBox="0 0 24 24" class="blk" role="presentation"><use data-href="/cms/svg/site/xotfxq7q38s.24.svg#arrow_down"></use></svg>
+									</span>
+									<ul class="fly-nv el-panel sld full ui-scroll bg-bx lk-bg alt bg-bx-no-sdw pd_v-10 pd_h-20 sdw-bx-itm" role="menu">
+										<li class=" " role="menuitem" data-closing="true">
+											<a class="clr-swp ato blk pd_tp-30 pd_bt-30  lnk-stl-rev" href="/why-us/before-and-after/" target=""><strong>Before and After</strong></a>
+											
+										</li>
+									</ul>
+								
+							</li>
+							<li class="flx f_m rlt hd-1024" role="menuitem">
+								<a class="btn v1 sml mrg_lt-90" href="/enquire-now/" rel="noopener"><span>Enquire now</span></a>
+							</li>
+						</ul>		
+						 <ul class="mbl-qk-lnks" id="HeaderV5QuickLinksMobile">
+							
+							<li>
+								<a class="btn v1 sml blk mrg_tp-30" href="/enquire-now/" rel="noopener"><span>Enquire now</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script id="Process_SmHeaderV5" type="text/javascript" style="display:none;">window.Process&&Process.Page(['Process_SmHeaderV5','SmHeaderV5_1','SmHeaderV5_2','SmHeaderV5_3']);</script>
+</header>
+	<main id="MainZone"><section class="pp v1 lt-bg pd_v-30" id="PrivacyPolicyV1" data-onvisible="show">
+	<div class="mn_tn">
+		<div class="pd_h-20 pd_v-20 rsp_pd">
+			<div class="cnt-stl ui-repeater" id="PrivacyPolicyV1Policy" data-content="true">
+				<div data-item="i">
+					<h1>Privacy Policy</h1><p>We recognize that you may be concerned about our use and disclosure of your personal information. Your privacy is very important to us, and the following will inform you of the information that we, Clean Sweep Cleaning Services, may collect from you, and how it is used. By using our website, www.exteriorgroup.com.au, you are accepting the practices described in this policy.</p>
+				</div><div data-item="i">
+					<h2>Information Collection</h2><p>We may collect non-personal information, such as a domain name and IP Address. The domain name and IP address reveals nothing personal about you other than the IP address from which you have accessed our site. We may also collect information about the type of Internet browser you are using, operating system, what brought you to our Website, as well as which of our Web pages you have accessed.</p><p>Additionally, if you communicate with us regarding our Website or our services, we will collect any information that you provide to us in any such communication.</p><p>We may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.</p>
+				</div><div data-item="i">
+					<h2>Information Use</h2><p>We use the collected information primarily for our own internal purposes, such as providing, maintaining, evaluating, and improving our services and Website, fulfilling requests for information, and providing customer support.</p>
+				</div><div data-item="i">
+					<h2>Consent</h2><p>By using this Website, you consent to the collection and use of information as specified above. If we make changes to our Privacy Policy, we will post those changes on this page. Please review this page frequently to remain up-to-date with the information we collect, how we use it, and under what circumstances we disclose it. You must review the new Privacy Policy carefully to make sure you understand our practices and procedures.</p><p><strong>If you feel that we are not abiding by this privacy policy, you should contact us immediately via telephone at </strong> <strong>0499 999 909 or via mail Attn: PO BOX 156, Kellyville, NSW 2155.</strong></p>
+				</div><div data-item="i">
+					<h2>Security</h2><p>We follow generally accepted industry standards to protect the information submitted to us, both during transmission and once we receive it.</p><p>If we collect sensitive information (such as credit card data), that information is encrypted and transmitted to us in a secure way. You can verify this by looking for a closed lock icon at the bottom of your web browser, or looking for &quot;https&quot; at the beginning of the address of the web page.</p><p>While we use encryption to protect sensitive information transmitted online, we also protect your information offline. Only employees who need the information to perform a specific job (for example, billing or customer service) are granted access to personally identifiable information. The computers/servers in which we store personally identifiable information are kept in a secure environment.</p>
+				</div><div data-item="i">
+					<h2>Cookies</h2><p>We use &quot;cookies&quot; on this site. A cookie is a piece of data stored on a site visitor's hard drive to help us improve your access to our site and identify repeat visitors to our site. For instance, when we use a cookie to identify you, you would not have to log in a password more than once, thereby saving time while on our site. Cookies can also enable us to track and target the interests of our users to enhance the experience on our site. Usage of a cookie is in no way linked to any personally identifiable information on our site.</p>
+				</div><div data-item="i">
+					<h2>Sharing</h2><p>We will not sell or otherwise provide the information we collect to outside third parties for the purpose of direct or indirect mass email marketing.</p><p>We will disclose personal information and/or an IP address, when required by law or in the good-faith belief that such action is necessary to:</p><ul><li>Cooperate with the investigations of purported unlawful activities and conform to the edicts of the law or comply with legal process served on our company</li><li>Protect and defend the rights or property of our Website and related properties</li><li>Identify persons who may be violating the law, the rights of third parties, or otherwise misusing our Website or its related properties</li></ul><p>Please keep in mind that whenever you voluntarily disclose personal information online - for example through e-mail, discussion boards, or elsewhere - that information can be collected and used by others. In short, if you post personal information online that is accessible to the public, you may receive unsolicited messages from other parties in return.</p><p>Ultimately, you are solely responsible for maintaining the secrecy of your personal information. Please be careful and responsible whenever you are online.</p>
+				</div><div data-item="i">
+					<h2>Links</h2><p>This Website may contain links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.</p>
+				</div><div data-item="i">
+					<h2>Surveys &amp; Contests</h2><p>From time-to-time our site may request information via surveys or contests. Participation in these surveys or contests is completely voluntary and you may choose whether or not to participate and therefore disclose this information. Information requested may include contact information (such as name and shipping address), and demographic information (such as zip code, age). Contact information will be used to notify the winners and award prizes. Survey information will be used for purposes of monitoring or improving the use and satisfaction of this site.</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section></main>
+	<footer id="FooterZone"><section class="ftr v3 dk-bg pd_v-20" id="SmFooterV3">
+	
+	
+	<div class="flx-blk-1024-mgd-b f_sb pd_h-30 rsp_pd">
+		<div class="ftr-logo fifth bdr_r flx f_clm f_t">
+			<div class="ta_c">
+				<a class="clr-swp mrg_bt-20 blk ndr-ln-rev" href="/enquire-now/" target=""><strong>Contact Us</strong></a>
+
+				<div class="ta_c-1024">
+					<div class="inln-blk"><a class="phn blk ndr-ln-rev flx f_m mrg_bt-30" href="tel:0499999909" id="SmFooterV3_1" data-replace-href="tel:0499999909"><svg viewBox="0 0 36 36" class="blk no-ato"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#phone"></use></svg> <strong class="mrg_lt-20"><span id="SmFooterV3_2" >0499 999 909</span></strong></a></div>
+				</div>
+
+				<div class="ftr-so fit ui-repeater" id="FooterV3Social">
+					<ul class="flx f_c">
+						<li class="mrg_lt" data-item="i" data-key="911">
+							<a class="so-lk blk scl-img-itm" href="https://www.instagram.com/theexteriorgroup/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+								<svg viewBox="0 0 36 36" class="blk itm"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#instagram"></use></svg>
+							</a>
+						</li>
+						<li class="mrg_lt" data-item="i" data-key="909">
+							<a class="so-lk blk scl-img-itm" href="https://www.facebook.com/profile.php?id=100086650427881" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+								<svg viewBox="0 0 36 36" class="blk itm"><use data-href="/cms/svg/site/xotfxq7q38s.36.svg#facebook"></use></svg>
+							</a>
+						</li>
+					</ul>                                    
+				</div>
+			</div>
+		</div>
+		<div class="ftr-nv fit half ta_c-1024 mrg_lt-90" id="FooterV3Nav">
+			<div class="cta ta_c">
+				<em>Our services are available to all members of the public regardless of race, gender or sexual orientation.</em>
+			</div>
+			<nav class="mrg_tp-40">
+				<ul class="flx-sml-grd" style="justify-content: center;">
+					
+					<li class="fit rlt"><a class="lnk-stl" href="/accessibility/">Accessibility</a></li>
+					<li class="fit rlt"><a class="lnk-stl" href="/privacy-policy/">Privacy Policy</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+		<div class="ftr-cta fifth bdr_l ta_r ta_c-1024">
+			<a class="btn v1 sml blk-500" href="/enquire-now/"><span>Enquire now</span></a>
+			
+			<div class="mrg_tp-80 blk">&copy; 2022 All Rights Reserved.</div>
+		</div>
+	</div>
+</section>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/cms/includes/s382fawb9u8.2209271133555.js" defer data-require='["a/bootstrap2","svg","p/scroll","sa.test","p/utils","p/slide-toggle","p/show-hide","p/accessibility-menu","p/site-header","p/tabbable"]'></script>
+<noscript id="deferred-styles">
+	<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600;700&family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"/>
+</noscript>
+<script>
+var loadDeferredStyles = function() {
+	var addStylesNode = document.getElementById('deferred-styles');
+	var replacement = document.createElement('div');
+	replacement.innerHTML = addStylesNode.textContent;
+	document.body.appendChild(replacement)
+	addStylesNode.parentElement.removeChild(addStylesNode);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+else window.addEventListener('load', loadDeferredStyles);
+</script>
+</body>
+</html>
